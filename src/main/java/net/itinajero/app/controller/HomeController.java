@@ -56,6 +56,13 @@ public class HomeController {
 		return "home";
 
 	}
+	
+	@RequestMapping(value="/formLogin", method = RequestMethod.GET)
+	public String mostrarLogin()
+	{
+		return "formLogin";
+	}
+	
 	/**
 	 * Metodo para filtrar las peliculas por fecha
 	 * @param fecha

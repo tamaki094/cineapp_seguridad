@@ -17,6 +17,9 @@
 		<intercept-url pattern="/horarios/*" access="hasAnyAuthority('EDITOR', 'GERENTE')" />
 		<intercept-url pattern="/noticias/*" access="hasAnyAuthority('EDITOR', 'GERENTE')" />
 		<intercept-url pattern="/banners/*" access="hasAnyAuthority('GERENTE')" />
+		
+		<form-login login-page="/formLogin" />
+		
 	</http>
 	 
 
